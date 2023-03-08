@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Running Animation</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url(img/bg.jpg)no-repeat top center/cover;
+			height: 100vh;
+		}
+		.wrapper{
+			display: flex;
+			height: 100%;
+			align-items: flex-end;
+		}
+		img{
+			transform: scaleX(-1);
+		}
+		.dog{
+			width: 200px;
+			filter: grayscale(1);
+		}
+		.tom{
+			width: 100px;
+			margin: 0 50px;
+		}
+		.mouse{
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<marquee behavior="" direction="right">
+			<img class="dog" src="img/dog.gif" alt="">
+			<img class="tom" src="img/tom.gif" alt="">
+			<img class="mouse" src="img/mouse.gif" alt="">
+		</marquee>
+	</div>
+	
+</body>
+</html>
